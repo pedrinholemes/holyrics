@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holyrics Plugin Editor</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/theme/dracula.css" />
+    <link rel="stylesheet" href="./css/theme/night.css" />
+    <link rel="stylesheet" href="./lib/codemirror.css" />
+  </head>
+
+  <body>
+    <textarea name="editor" id="editor">
+span.header {
+  display: block;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  font-size: 4px;
+  width: 100%;
+  margin: auto;
+}
+
+.screen-custom {
+  
+}
+
+.text-custom {
+  border: none;
+  text-shadow: 2px 2px 30px rgba(0,0,0) ;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: black;
+}
+
+.alert-custom {
+  
+}
+
+.bible-header-custom {
+  font-size: 4px;
+}
+
+.page-count-custom {
+  
+}
+
+.image-custom {
+  
+}
+</textarea
+    >
+    <div id="preview">
+      <h1>Preview</h1>
+      <iframe sandbox="allow-same-origin"></iframe>
+    </div>
+    <script type="module">
+      window.addEventListener(
+        'DOMContentLoaded',
+        async () => await import('./main.js')
+      )
+    </script>
+  </body>
+</html>
